@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131-Dynamic Web Fundimantals-Sifiso Khuzwayo</title>
+    <meta name="description" content="WDD 131-Dynamic Web Fundimentals">
+    <meta name="author" content="Sifiso B Khuzwayo">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
-    <h1>WDD 131 Sfiso Khuzwayo</h1>
+    <header>
+        <h1>WDD131: Dynamic Web Fundamentals - Sifiso B Khuzwayo</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/sifiso-basil-khuzwayo-7aaa22222/">LinkedIn</a>
+            <a href="https://www.byupathway.edu/sign-in">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/6?lang=eng&id=p33-p34#p33">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/myImage.jpg" alt="myImage" width="150" height="150">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nemo asperiores, ab et,
+                quod ducimus modi aliquam ea, recusandae vero facere rerum repudiandae deleniti 
+                laudantium atque numquam qui similique! Dolor!</p>
+        </section>
+
+        <section class="card">
+            <h2>My Location</h2>
+            <img src="images/durbanSouthAfrica.jpg" alt="myTownImage" width="200" height="150">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Repellendus minus nobis id ratione recusandae alias? Sit ex quae 
+                minima ducimus sequi fugit ipsam provident blanditiis, 
+                magni veniam est doloribus nisi.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id= "currentyear"></span>| Sifiso B Khuzwayo | South Africa</p>
+        <P id="lastModified"></P>
+    </footer>
+
 </body>
 </html>
