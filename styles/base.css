@@ -1,0 +1,262 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* HEADER STYLING */
+
+header {
+    background-color: #646c70;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/* COURSE TITLE */
+
+.course-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+
+/* NAVIGATION STYLING */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+
+nav a {
+    color: white;
+    padding: 0.8rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+nav a:hover {
+    background-color: #ddd;
+    color: #1a4a63;
+    border-radius: 5px;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/* MAIN HEADING */
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+
+/* TWO-COLUMN GRID LAYOUT */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+}
+
+
+/* GENERAL CARD STYLING */
+
+.card {
+    background-color: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+/* CARD HEADINGS */
+
+.card h2 {
+    background-color: #2a424e;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 0;
+}
+
+
+/* ABOUT ME CONTENT */
+
+.about-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.about-content img {
+    width: 110px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.about-content p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* LOCATION HEADING */
+
+.card h3 {
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin: 0 1.5rem;
+}
+
+
+/* LOCATION CONTENT */
+
+.location-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.location-content img {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.location-content p {
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* WEB DEVELOPMENT RESOURCES */
+
+.resources-card ul {
+    margin-top: 5rem;
+    padding-left: 2rem;
+    line-height: 1.8;
+}
+
+
+.resources-card a {
+    color: #0000ee;
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+    background-color: #43535a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 600px) {
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 0.8rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-content,
+    .location-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img,
+    .location-content img {
+        max-width: 100%;
+    }
+
+    .resources-card ul {
+        margin-top: 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* < !DOCTYPE html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WDD 131 - Dynamic Web Fundamentals - Sifiso Khuzwayo</title><meta name="description" content="WDD 131 Dynamic Web Fundamentals - Sifiso Khuzwayo"><meta name="author" content="Sifiso B Khuzwayo"><link rel="stylesheet" href="styles/base.css"><script src="scripts/getdates.js" defer></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+rel="stylesheet"></head><body><header><div class="course-title">WDD 131: Dynamic Web Fundamentals </div><nav><a href="https://www.linkedin.com/in/sifiso-basil-khuzwayo-7aaa22222/">LinkedIn</a><a href="https://www.byupathway.edu/sign-in">Canvas</a><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/6?lang=eng">Scripture</a><a href="#">Final Project</a></nav></header><main><h1>Sifiso Khuzwayo</h1><div class="content-grid">< !-- ABOUT ME CARD --><section class="card about-card"><h2>About Me</h2><div class="about-content"><img src="images/myImage.jpg"
+alt="Photo of Sifiso Khuzwayo"
+width="150"
+height="150"><p>My name is Sifiso Khuzwayo. I am from South Africa. I am currently studying WDD 131 Dynamic Web Fundamentals. I enjoy learning new things and developing my skills in web development. </p></div><h3>Durban,
+South Africa</h3><div class="location-content"><img src="images/durbanSouthAfrica.jpg"
+alt="Durban, South Africa"
+width="200"
+height="150"><p>Durban is a coastal city in KwaZulu-Natal,
+South Africa. It is known for its beautiful beaches,
+warm climate,
+rich culture and the Indian Ocean. </p></div></section>< !-- WEB DEVELOPMENT RESOURCES CARD --><section class="card resources-card"><h2>Web Dev Resources</h2><ul><li><a href="https://dev.to/">Dev.to Community</a></li><li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li><li><a href="https://css-tricks.com/">CSS Tricks</a></li><li><a href="https://www.w3schools.com/">W3 Schools</a></li><li><a href="https://www.udemy.com/">Udemy</a></li><li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li></ul></section></div></main><footer><p>&copy;
+<span id="currentyear"></span>| Sifiso Khuzwayo | South Africa </p><p id="lastModified"></p></footer></body></html> */
